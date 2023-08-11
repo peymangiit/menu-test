@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menues</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .menus{
+            margin-top: 10px;
+            margin-right: 40px;
+            padding: 10px;
+            display: flex;
+            gap: 5px;
+            position: relative;
+
+        }
+        .menu{
+            width: 100px;
+            position: relative;
+            padding: 3px;
+            border: 1px solid black;
+            font-weight: bold;
+            padding-right: 20px;
+            cursor: pointer;
+            z-index: 4;
+        }
+       
+        .content li{
+            list-style: none;
+            padding:5px ;
+            margin-left: 10px;
+        }
+        .content li:hover{
+            color: blue;
+            cursor: pointer;
+        }
+        .content{
+            display: flex;
+            position: absolute;
+            right: 0;
+            top: 25px;
+            min-width: 300px;
+            height: 400px;
+            padding: 10px 5px;
+            white-space: nowrap;
+            display: none;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.219);
+        }
+        .menu:hover{
+            background-color: aqua;
+        }
+        #menu1:hover #content1{
+            display: block;
+        }
+        #menu2:hover #content2{
+            display: flex;
+        }
+        #menu3:hover #content3{
+            display: flex;
+        }
+    </style>
+</head>
+<body dir="rtl"> 
+    <div class="menus">
+        <div class="menu" id="menu1"> منو 1
+            <div class="content" id="content1">
+                <ul>
+                    <li>محصولات شرکت</li>
+                    <li>محصولات شرکت</li>
+                    <li>محصولات شرکت</li>
+                </ul>
+            </div>
+        </div>
+        <div class="menu" id="menu2"> منو 2
+            <div class="content" id="content2">
+                <div class="subcontent">
+
+                    <ul>
+                        <li>محصولات شرکت</li>
+                        <li>محصولات شرکت</li>
+                        <li>محصولات شرکت</li>
+                    </ul>
+                </div>
+                <div class="subcontent">
+                    <ul>
+                        <li>محصولات کارخانه</li>
+                        <li>محصولات کارخانه</li>
+                        <li>محصولات کارخانه</li>
+                        <li>محصولات کارخانه</li>
+                        <li>محصولات کارخانه</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="menu" id="menu3"> منو 3
+            <div class="content" id="content3">
+                <div class="subcontent">
+
+                    <ul>
+                        <li>محصولات شرکت</li>
+                        <li>محصولات شرکت</li>
+                        <li>محصولات شرکت</li>
+                    </ul>
+                </div>
+                <div class="subcontent">
+                    <ul>
+                        <li>محصولات کارخانه</li>
+                        <li>محصولات کارخانه</li>
+                        <li>محصولات کارخانه</li>
+                        <li>محصولات کارخانه</li>
+                        <li>محصولات کارخانه</li>
+                    </ul>
+                </div>
+                <div class="subcontent">
+                    <ul>
+                        <li> محصولات انبار فروش</li>
+                        <li>محصولات انبار</li>
+                        <li>محصولات انبار</li>
+                        <li>محصولات انبار</li>
+                        <li>محصولات انبار</li>
+                        <li>محصولات انبار</li>
+                        <li>محصولات انبار</li>
+                    </ul>
+                </div>
+                 <div class="subcontent">
+
+                    <ul>
+                        <li>نمونه محصولات شرکت </li>
+                       
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
